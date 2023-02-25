@@ -1,0 +1,89 @@
+.Home {
+    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+  }
+
+  .left--container {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width:30%;
+  }
+  .right--container {
+    width: 30%;
+  }
+  .tree--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:40%;
+    /* padding: 20px;
+    border: 1px solid rgb(255, 255, 255, 0.5); */
+  }
+
+.welcome {
+  /* border: 1px solid blue; */
+  width: 60%;
+  font-size: 40px;
+  color: #000000;
+  animation: welcomeAnimation 7s ease-in forwards 2s;
+}
+
+.welcome--bold {
+  font-size: 45px;
+  color: #000000;
+  font-weight: 700;
+  animation: welcomeBoldAnimation 7s ease-in forwards 2s;
+}
+
+.welcome--line--two {
+  color: #000000;
+  animation: welcomeAnimation 7s ease-in forwards 4s;
+}
+
+.move--me {
+  color: #000000;
+  animation: shakeMe 4s linear 1 forwards 1s, shakeMe 4s linear 1 forwards 8s;
+
+}
+
+.shake--me {
+  color: #000000;
+  animation: shakeMe 4s linear 1 forwards 3s, shakeMe 4s linear 1 forwards 10s;
+}
+
+@keyframes welcomeAnimation {
+  from {
+    color: black;
+  }
+  to {
+    color:rgb(219, 212, 212)
+  }
+}
+
+@keyframes welcomeBoldAnimation {
+  from {
+    color: black;
+  }
+  to {
+    color: rgb(255, 0, 0);
+  }
+}
+
+@keyframes shakeMe {
+  0% {
+    color: black;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: black;
+  }
+}
