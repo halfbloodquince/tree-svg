@@ -2080,8 +2080,8 @@ export default function Tree() {
           </filter>
         </defs>
       </svg>
-      <div className="mouse--pos">Mouse pos: {mousePos}</div>
-      <div className="last--pos">Tots: {mouseAccumulator}</div>
+      {/* <div className="mouse--pos">Mouse pos: {mousePos}</div>
+      <div className="last--pos">Tots: {mouseAccumulator}</div> */}
     </div>
   );
 }
