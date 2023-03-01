@@ -9,7 +9,24 @@
 } */
 
 .tree--white {
-  opacity: 0.6;
+  opacity: 0.25;
+  fill: white;
+  animation: treeBody 3s linear infinite;
+}
+
+@keyframes treeBody {
+  0% {
+    opacity: 0.16;
+  }
+  40% {
+    opacity: 0.17;
+  }
+  80% {
+    opacity: 0.19;
+  }
+  100% {
+    opacity: 0.16;
+  }
 }
 
 .tree--svg {
